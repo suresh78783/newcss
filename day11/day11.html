@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid child properties</title>
+    <link rel="stylesheet" href="animate.min.css">
+    <style>
+        
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #353232;
+        color: beige;
+    }
+      
+.child1,.child2, .child3, .child4, .child5, .child6, .child7, .child8, .child9{
+    border: 3px solid rgb(148, 148, 178);
+    padding: 20px;
+    margin: 10px;
+
+
+}
+.class1{
+    display: grid;
+    grid-template-areas: 
+    "header Nav Section Section"
+    "header aside Article Header1"
+    "av1 aside Article Header1"
+    "av1 Main footer Header1"
+    "av1 Main footer Header1";
+}
+.child1{
+    grid-area: header;
+    background-color: rgb(210, 70, 70);
+}
+.child2{
+    grid-area: Nav;
+    background-color: skyblue;
+}
+.child3{
+    grid-area: Section;
+    background-color: burlywood;
+}
+.child4{
+    grid-area: Main;
+    background-color: rgb(0, 255, 179);
+}
+.child5{
+    grid-area: aside;
+    background-color: bisque;
+    color: #000;
+}
+.child6{
+    grid-area: footer;
+    background-color: skyblue;
+}
+.child7{
+    grid-area: Article;
+    background-color: antiquewhite;
+    color: #000;
+}
+.child8{
+    grid-area: Header1;
+    background-color: #FF000D;
+}
+.child9{
+    grid-area: av1;
+    background-color: antiquewhite;
+    color: #000
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- headding part start  -->
+        <div class="wrapper">
+            <svg>
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                    Welcome To My Page 
+                </text>
+            </svg>
+        </div>
+        <!-- headding part End  -->
+    </div>
+    <div class="class1">
+        <div class="child1">Header</div>
+        <div class="child2">Nav</div>
+        <div class="child3">Section</div>
+        <div class="child4">Section1</div>
+        <div class="child5">aside</div>
+        <div class="child6">footer</div>
+        <div class="child8">Header1</div>
+        <div class="child7">Article</div>
+        <div class="child9">Nav-1</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    .headder{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        margin: 0%;
+        background-color: aliceblue;
+        justify-content: space-around;
+
+    }
+    a{
+        text-decoration: none;
+    }
+    .left-headder{
+        font-size: 250%;
+        margin-top: 20px;
+    }
+    .main-section{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-content: center;
+
+    }
+    .class_bottom{
+        display: flex;
+        justify-content: center;
+    }
+    .a2{
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .a2:hover{
+        background-color: black;
+        color: #fff;
+    }
+    .bottom{
+        text-align: center;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3,33.3%);
+        justify-content: space-evenly;
+    }
+    .sub-1{
+        display: flex;
+    }
+    .class_fotter{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* grid-template-columns: repeat(5,auto); */
+    }
+    .non{
+        display: flex;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 10px;
+        background-color: black;
+        color: #fff;
+    }
+    .right-headder{
+        margin-right: 20px;
+    }
+
+@media screen and (max-width: 576px){
+    .main-section{
+        grid-template-columns: auto;
+    }
+    .surya{
+        width: 500px;
+    }
+
+    .a2{
+        margin: 10px;
+        padding: 5px;
+    }
+}
+@media screen and (width > 576px) and (width< 768px){
+    .main-section{
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+    }
+    .surya{
+        width: 576px;
+    }
+    .class_bottom{
+        display: flex;
+        justify-content: center;
+    }
+    .a2{
+        margin: 20px;
+        padding: 5px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="headder">
+        <div class="left-headder">
+            <a href="#"><i class='bx bx-menu'></i></a>
+        </div>
+        <div class="center-header">
+            <h1>My Food</h1>
+        </div>
+        <div class="right-headder">
+            <h1>Mail</h1>
+        </div>
+    </div><br><br><br>
+    <div class="main-section">
+        <div class="class_main">
+            <img src="image1.png" alt="Sandwich"  style="width:100%; border-radius: 20px;" height="400px">
+            <h1>The Perfect Sandwich, A Real NYC Classic</h1>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="class_main">
+            <img src="image2.png" alt="Sandwich" style="width:100%; border-radius: 20px;" height="400px">
+            <h1>Let Me Tell You About This Steak</h1>
+             <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="class_main">
+            <img src="image3.png" alt="Sandwich"  style="width:100%; border-radius: 20px;" height="400px">
+            <h1>Cherries, interrupted</h1>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.
+                What else?</p>
+        </div>
+        <div class="class_main">
+            <img src="image4.png" alt="Sandwich" style="width:100%; border-radius: 20px;" height="400px">
+            <h1>Once Again, Robust Wine and Vegetable Pasta</h1>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="class_main">
+            <img src="image5.png" alt="Sandwich"  style="width:100%; border-radius: 20px;" height="400px">
+            <h1>All I Need Is a Popsicle</h1>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="class_main">
+            <img src="image6.png" alt="Sandwich" style="width:100%; border-radius: 20px;" height="400px">
+            <h1>Salmon For Your Skin</h1>
+            <p>nce again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="class_main">
+            <img src="image7.png" alt="Sandwich" style="width:100%; border-radius: 20px;" height="400px">
+            <h1>The Perfect Sandwich, A Real  Classic</h1>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="class_main">
+            <img src="image8.png" alt="Sandwich" style="width:100%; border-radius: 20px;" height="400px">
+            <h1>Le French</h1>
+            <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+    </div>
+    <div class="class_bottom">
+        <div class="a2">
+            <p><i class='bx bxs-chevrons-left'></i></p>
+        </div>
+        <div class="a2">
+            <p>1</p>
+        </div>
+        <div class="a2">
+            <p>2</p>
+        </div>
+        <div class="a2">
+            <p>3</p>
+        </div>
+        <div class="a2">
+            <p>4</p>
+        </div>
+        <div class="a2">
+            <p>5</p>
+        </div>
+        <div class="a2">
+            <p><i class='bx bx-chevrons-right'></i></p>
+        </div>
+    </div>
+    <br><br><hr><br><br>
+    <div class="bottom">
+        <br><br>
+        <h1>About Me, The Food Man</h1> <br><br>
+        <img class="surya" src="image9.png" alt="" style="border-radius: 20px;"><br><br>
+        <h1>I am Who I Am!</h1><br>
+        <p>With Passion For Real, Good Food</p><br>
+        <p style="letter-spacing: 1.2px;">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p><br><br><br>
+    </div><hr><br><br>
+    <footer>
+        <div class="fotter-1">
+            <h1>FOOTER</h1>
+            <br>
+            <br>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p><br>
+            <p>Powered by w3.css</p>
+        </div>
+        <div class="fotter-2">
+            <h1>BLOG POST</h1><br>
+            <div class="sub-1">
+                <div class="subchild-1">
+                    <img src="image-10.png" alt="" height="55px" width="55px">
+                </div>
+                <div class="subchild-2">
+                    <h1>Lorem</h1>
+                    <p>Sed mattis nunc</p>
+                </div>
+            </div>
+            <div class="sub-1">
+                <div class="subchild-1">
+                    <img src="image-10.png" alt=""  height="55px" width="55px">
+                </div>
+                <div class="subchild-2">
+                    <h1>Lorem</h1>
+                    <p>Sed mattis nunc</p>
+                </div>
+            </div>
+        </div>
+        <div class="fotter-3">
+            <h1>POPULAR TAGS</h1><br><br>
+            <div class="class_fotter">
+                <p class="non">Travel</p>
+                <p class="non">new York</p>
+                <p class="non">Dinner</p>
+                <p class="non">Salmon</p>
+                <p class="non">France</p>
+                <p class="non">Drinks</p>
+                <p class="non">Ideas</p>
+                <p class="non">Flavors</p>
+                <p class="non">Cuisine</p>
+                <p class="non">Chicken</p>
+                <p class="non">Dressing</p>
+                <p class="non">Fried</p>
+                <p class="non">Fish</p>
+                <p class="non">Duck</p>
+            </div>
+        </div>
+    </footer>
+   
+</body>
+</html>
