@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Player</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(37, 37, 37, .9);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main {
+    height: 100vh;
+    width: 30vw;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.head {
+    color: rgba(223, 212, 212, 0.5);
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 36px;
+}
+
+.movie_img {
+    margin: 20px 0px;
+    text-align: center;
+
+}
+
+img {
+    text-align: center;
+
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    transform: rotate(3600deg);
+    animation: rotate 10s .1s infinite linear;
+    box-shadow: 1px 1px 10px white;
+}
+
+.jum {
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+}
+
+.inc_dec {
+    height: 200px;
+    width: 50%;
+    /* background-color: aliceblue; */
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+}
+
+.inc_dec1,
+.inc_dec2,
+.inc_dec3,
+.inc_dec4,
+.inc_dec5,
+.inc_dec6,
+.inc_dec7,
+.inc_dec8 {
+    width: 50%;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    ;
+    animation: jump 1s .1s infinite ease-in reverse;
+    margin: 0px auto;
+}
+
+.inc_dec1 {
+    animation-delay: 0s;
+}
+
+.inc_dec2 {
+    animation-delay: .1s;
+
+}
+
+.inc_dec3 {
+    animation-delay: .2s;
+
+}
+
+.inc_dec4 {
+    animation-delay: .3s;
+
+}
+
+.inc_dec5 {
+    animation-delay: 0s;
+
+}
+
+.inc_dec6 {
+    animation-delay: .3s;
+
+}
+
+.inc_dec7 {
+    animation-delay: .5s;
+
+}
+
+.inc_dec8 {
+    animation-delay: .2s;
+
+}
+
+.audio {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+@keyframes jump {
+    0% {
+        height: 100%;
+        animation-delay: .2s;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(72deg);
+    }
+
+    40% {
+        transform: rotate(144deg);
+    }
+
+    60% {
+        transform: rotate(216deg);
+    }
+
+    80% {
+        transform: rotate(288deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <h1>Oye</h1>
+        </div>
+        <div class="movie_img">
+            <img src="oye.jpg" alt="">
+        </div>
+        <div class="jum">
+            <div class="inc_dec">
+                <div class="inc_dec1"></div>
+                <div class="inc_dec2"></div>
+                <div class="inc_dec3"></div>
+                <div class="inc_dec4"></div>
+                <div class="inc_dec5"></div>
+                <div class="inc_dec6"></div>
+                <div class="inc_dec7"></div>
+                <div class="inc_dec8"></div>
+            </div>
+        </div>
+        <div class="audio">
+            <audio src="Povoddhe Prema.mp3" controls muted></audio>
+        </div>
+    </div>
+</body>
+</html>

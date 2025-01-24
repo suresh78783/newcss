@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid child properties</title>
-    <link rel="stylesheet" href="animate.min.css">
+    <title>Document</title>
     <style>
         
     *{
         box-sizing: border-box;
     }
-    body{
-        background-color: #353232;
-        color: beige;
-    }
+    
       
 .child1,.child2, .child3, .child4, .child5, .child6, .child7, .child8, .child9{
-    border: 3px solid rgb(148, 148, 178);
-    padding: 20px;
-    margin: 10px;
+    border: 2px solid rgb(148, 148, 178);
+    padding: 30px;
+    margin: 20px;
 
 
 }
@@ -27,13 +23,13 @@
     grid-template-areas: 
     "header Nav Section Section"
     "header aside Article Header1"
-    "av1 aside Article Header1"
-    "av1 Main footer Header1"
-    "av1 Main footer Header1";
+    "Nav1 aside Article Header1"
+    "Nav1 Main footer Header1"
+    "Nav1 Main footer Header1";
 }
 .child1{
     grid-area: header;
-    background-color: rgb(210, 70, 70);
+    background-color: rgb(100, 70, 210);
 }
 .child2{
     grid-area: Nav;
@@ -63,10 +59,10 @@
 }
 .child8{
     grid-area: Header1;
-    background-color: #FF000D;
+    background-color: #00ff2f;
 }
 .child9{
-    grid-area: av1;
+    grid-area: Nav1;
     background-color: antiquewhite;
     color: #000
 }
@@ -74,27 +70,17 @@
     </style>
 </head>
 <body>
-    <div class="main">
-        <!-- headding part start  -->
-        <div class="wrapper">
-            <svg>
-                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                    Welcome To My Page 
-                </text>
-            </svg>
-        </div>
-        <!-- headding part End  -->
-    </div>
+    
     <div class="class1">
-        <div class="child1">Header</div>
+        <div class="child1">header</div>
         <div class="child2">Nav</div>
-        <div class="child3">Section</div>
-        <div class="child4">Section1</div>
-        <div class="child5">aside</div>
+        <div class="child3">section</div>
+        <div class="child4">Main</div>
+        <div class="child5">Aside</div>
         <div class="child6">footer</div>
-        <div class="child8">Header1</div>
-        <div class="child7">Article</div>
-        <div class="child9">Nav-1</div>
+        <div class="child8">Article</div>
+        <div class="child7">header1</div>
+        <div class="child9">Nav1</div>
     </div>
 </body>
 </html>
